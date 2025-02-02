@@ -14,7 +14,7 @@ import { AccountService } from '../../core/services/account.service';
 import { CheckoutDeliveryComponent } from "./checkout-delivery/checkout-delivery.component";
 import { CheckoutReviewComponent } from "./checkout-review/checkout-review.component";
 import { CartService } from '../../core/services/cart.service';
-import { CurrencyPipe, JsonPipe } from '@angular/common';
+import { CurrencyPipe } from '@angular/common';
 import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
 
 
@@ -30,7 +30,6 @@ import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
     CheckoutDeliveryComponent,
     CheckoutReviewComponent,
     CurrencyPipe,
-    JsonPipe,
     MatProgressSpinnerModule
 ],
   templateUrl: './checkout.component.html',
