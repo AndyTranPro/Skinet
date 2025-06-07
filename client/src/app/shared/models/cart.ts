@@ -1,11 +1,20 @@
 import { nanoid } from 'nanoid';
 
+export type Coupon = {
+    couponId: string;
+    promotionCode: string;
+    name: string;
+    amountOff?: number;
+    percentOff?: number;
+}
+
 export type CartType = {
     id: string;
     items: CartItem[];
     deliveryMethodId?: number;
     paymentIntentId?: string;
     clientSecret?: string;
+    coupon?: Coupon;
 }
 
 export type CartItem = {
@@ -24,4 +33,5 @@ export class Cart implements CartType {
     deliveryMethodId?: number;
     paymentIntentId?: string;
     clientSecret?: string;
+    coupon?: Coupon;
 }
